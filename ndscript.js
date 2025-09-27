@@ -1,7 +1,9 @@
 const express = require('express');
 const fetch = require('node-fetch'); // ✅ this fixes the error
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 const PORT = 3000;
 
 const chatname = 'chatbot';
